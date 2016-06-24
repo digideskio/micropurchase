@@ -6,6 +6,10 @@ Then(/^I should not see "(.+)"$/) do |text|
   expect(page).to_not have_content(text)
 end
 
+Then(/^I should see the statistics about previous auctions$/) do
+  pending
+end
+
 Then(/^I should see a message about no auctions$/) do
   expect(page).to have_content(
     "There are no current open auctions on the site. " \

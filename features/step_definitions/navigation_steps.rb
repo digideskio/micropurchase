@@ -1,3 +1,7 @@
+When(/^I visit the winners page$/) do
+  visit auctions_winners_path
+end
+
 When(/^I refresh the page$/) do
   visit page.current_path
 end
